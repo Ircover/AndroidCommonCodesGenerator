@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>AndroidCommonCodesGenerator.AndroidCommonCodesGenerator</id>
+    <name>Android common codes generator</name>
+    <vendor email="ircover@yandex.ru">Ircover</vendor>
+
+    <description>Tools to generate some common code for Android native development.</description>
+
+    <actions>
+        <group id="AndroidCommonCodesGenerator.TopMenu"
+               text="_Generate Code"
+               description="My plugin toolbar menu">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="MyAction"
+                    class="actions.GenerateActivityAction"
+                    text="_Activity"
+                    description="MyAction"/>
+        </group>
+    </actions>
+    <project-components>
+        <component>
+            <implementation-class> components.SettingsComponent </implementation-class>
+        </component>
+    </project-components>
+</idea-plugin>
